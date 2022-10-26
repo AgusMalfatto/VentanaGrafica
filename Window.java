@@ -25,18 +25,21 @@ public class Window extends JFrame
 
         tfName = new JTextField();
         tfName.setFont(mainFont);
+        tfName.setText("");
 
         JLabel lastName = new JLabel("Apellido");
         lastName.setFont(mainFont);
 
         tfLastName = new JTextField();
         tfLastName.setFont(mainFont);
+        tfLastName.setText("");
 
         JLabel age = new JLabel("Edad");
         age.setFont(mainFont);
 
         tfAge = new JTextField();
         tfAge.setFont(mainFont);
+        tfAge.setText("");
 
         JPanel textPanel = new JPanel();
         textPanel.setLayout(new GridLayout(6, 1, 5, 5));
@@ -61,6 +64,10 @@ public class Window extends JFrame
                 data[2] = tfAge.getText();
                 
                 model.addRow(data);
+                
+                data[0].setText("");
+                data[1].setText(""):
+                data[2].setText("");
             }
             
         });
